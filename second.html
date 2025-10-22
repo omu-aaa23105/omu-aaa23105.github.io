@@ -24,6 +24,27 @@
         <h2>✈ おすすめの旅行先その３　韓国</h2>
         <p>北海道や沖縄より近く航空券代も安いのがポイントで日本語や英語も思った以上に通じるので観光しやすいおすすめの旅行先です</p>
     </div>
+
+    <h2>BMI指標計算</h2>
+ 　 　<form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+    　 <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+    　　<p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+    　　<p><label>BMI：<output name="bmi"></output></label></p>
+  　　</form>
+　
+  　<script>
+    　function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+   　 }
+
+   　 setInterval(updateClock, 1000);
+    　updateClock(); 
+  　</script>
+    
     <div>
         <h3>おすすめの食べ物はこちら</h3>
         <p><a href="index.html">１ページ目へ</a></p>
